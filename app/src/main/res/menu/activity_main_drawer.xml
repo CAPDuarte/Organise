@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_notas"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="Notas" />
+        <item
+            android:id="@+id/nav_lembretes"
+            android:icon="@android:drawable/ic_menu_today"
+            android:title="Lembretes" />
+
+        <item
+            android:id="@+id/nav_configuracao"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="Configurações" />
+    </group>
+
+
+
+</menu>
