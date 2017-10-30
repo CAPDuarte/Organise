@@ -19,6 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Lembretes" />
+        <activity android:name=".Notas" />
+        <activity android:name=".Configuracoes"></activity>
     </application>
 
 </manifest>

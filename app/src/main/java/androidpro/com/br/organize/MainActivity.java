@@ -1,5 +1,6 @@
 package androidpro.com.br.organize;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -63,11 +64,18 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_notas    ) {
-            // Handle the camera action
+            View view = new View(this);
+            Intent Intent = new Intent(view.getContext(), Notas.class);
+            view.getContext().startActivity(Intent);
         } else if (id == R.id.nav_lembretes) {
+            View view = new View(this);
+            Intent Intent = new Intent(view.getContext(), Lembretes.class);
+            view.getContext().startActivity(Intent);
 
         } else if (id == R.id.nav_configuracao) {
-
+            View view = new View(this);
+            Intent Intent = new Intent(view.getContext(), Configuracoes.class);
+            view.getContext().startActivity(Intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
