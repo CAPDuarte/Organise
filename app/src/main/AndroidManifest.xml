@@ -21,7 +21,8 @@
         </activity>
         <activity android:name=".Lembretes" />
         <activity android:name=".Notas" />
-        <activity android:name=".Configuracoes"></activity>
+        <activity android:name=".Configuracoes" />
+        <activity android:name=".AdicionarAtividade"></activity>
     </application>
 
 </manifest>
