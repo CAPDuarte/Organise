@@ -17,7 +17,7 @@
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="439dp"
         android:background="@color/colorPrimary"
         android:theme="@style/AppTheme.AppBarOverlay">
 
@@ -27,6 +27,36 @@
             android:layout_height="?attr/actionBarSize"
             android:background="@color/colorPrimaryDark"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <TextView
+            android:id="@+id/titulomain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textomain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/datamain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/horamain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/prioridademain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
     </android.support.design.widget.AppBarLayout>
 

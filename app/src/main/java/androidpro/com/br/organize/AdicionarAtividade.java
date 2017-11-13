@@ -9,8 +9,6 @@ import android.widget.EditText;
 import android.widget.RatingBar;
 import android.widget.Toast;
 
-import androidpro.com.br.organize.database.DatabaseController;
-
 public class AdicionarAtividade extends AppCompatActivity {
 
     @Override
