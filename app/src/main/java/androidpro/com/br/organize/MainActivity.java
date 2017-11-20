@@ -1,6 +1,10 @@
 package androidpro.com.br.organize;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Intent;
+//import android.icu.util.Calendar;
+import java.util.Calendar;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,6 +17,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -42,7 +47,32 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-    }
+
+        //Recupera dados digitados pelo usuário na classe AdicionarAtividade
+        //https://stackoverflow.com/questions/36061438/how-to-pass-two-strings-from-one-activity-to-another-activity-in-android
+                Intent intent = getIntent();
+                String titulo = intent.getStringExtra("titulo");
+                String texto = intent.getStringExtra("texto");
+                String data = intent.getStringExtra("data");
+                String hora = intent.getStringExtra("hora");
+                String prioridade = intent.getStringExtra("prioridade");
+
+                TextView tituloview = (TextView) findViewById(R.id.titulomain);
+                TextView textoview = (TextView) findViewById(R.id.textomain);
+                TextView dataview = (TextView) findViewById(R.id.datamain);
+                TextView horaview = (TextView) findViewById(R.id.horamain);
+                TextView prioridadeview = (TextView) findViewById(R.id.prioridademain);
+
+                tituloview.setText(titulo);
+                textoview.setText(texto);
+                dataview.setText(data);
+                horaview.setText(hora);
+                prioridadeview.setText(prioridade);
+
+        //Configurando um alarme
+
+        ////////Fim de Configurando um alarme
+        }
 
     @Override
     public void onBackPressed() {
