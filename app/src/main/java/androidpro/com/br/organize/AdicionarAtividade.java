@@ -40,6 +40,24 @@ public class AdicionarAtividade extends AppCompatActivity {
                         intent.putExtra("hora",horaString);
                         intent.putExtra("prioridade",prioridadeString);
                         AdicionarAtividade.this.startActivity(intent);
+
+                //Passando dados digitados pelo usuário para a classe NOTAS
+                Intent intent2 = new Intent(AdicionarAtividade.this, Notas.class);
+                intent.putExtra("titulo",tituloString);
+                intent.putExtra("texto",textoString);
+                intent.putExtra("data",dataString);
+                intent.putExtra("hora",horaString);
+                intent.putExtra("prioridade",prioridadeString);
+                AdicionarAtividade.this.startActivity(intent);
+
+                //Passando dados digitados pelo usuário para a classe NOTAS
+                Intent intent3 = new Intent(AdicionarAtividade.this, Lembretes.class);
+                intent.putExtra("titulo",tituloString);
+                intent.putExtra("texto",textoString);
+                intent.putExtra("data",dataString);
+                intent.putExtra("hora",horaString);
+                intent.putExtra("prioridade",prioridadeString);
+                AdicionarAtividade.this.startActivity(intent);
             }
         });
     }

@@ -2,10 +2,12 @@ package androidpro.com.br.organize;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 //import android.icu.util.Calendar;
 import java.util.Calendar;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.view.View;
@@ -69,9 +71,8 @@ public class MainActivity extends AppCompatActivity
                 horaview.setText(hora);
                 prioridadeview.setText(prioridade);
 
-        //Configurando um alarme
+        //tratando o calendário e o horário para trabalhar com o alarme
 
-        ////////Fim de Configurando um alarme
         }
 
     @Override

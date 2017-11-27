@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="androidpro.com.br.organize">
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <application
         android:allowBackup="true"
@@ -22,7 +23,7 @@
         <activity android:name=".Lembretes" />
         <activity android:name=".Notas" />
         <activity android:name=".Configuracoes" />
-        <activity android:name=".AdicionarAtividade"></activity>
+        <activity android:name=".AdicionarAtividade"/>
     </application>
 
 </manifest>
